@@ -66,3 +66,5 @@ const firstTicket = new ticket ('pizza, bread, and soda', '7:03 PM', 575)
 
 //CODE HERE
 firstTicket.updateStatus('Cooking')
+
+console.log(firstTicket)
