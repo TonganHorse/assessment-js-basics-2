@@ -97,13 +97,37 @@ console.log(type)
 */
 
 //CODE HERE
-const foodArr = {
+const foodArr = [{
     name: 'fatboy',
     price: 1,
     category: 'icecream',
     comfortRating: 10,
     rating: 10
-}
+},{
+    name: 'fatboy',
+    price: 2,
+    category: 'icecream',
+    comfortRating: 10,
+    rating: 10
+},{
+    name: 'fatboy',
+    price: 3,
+    category: 'icecream',
+    comfortRating: 10,
+    rating: 10
+},{
+    name: 'fatboy',
+    price: 4,
+    category: 'icecream',
+    comfortRating: 10,
+    rating: 10
+},{
+    name: 'fatboy',
+    price: 5,
+    category: 'icecream',
+    comfortRating: 10,
+    rating: 10
+}]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -120,7 +144,7 @@ const foodArr = {
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(elem => elem.price)
+const filteredFood = foodArr.filter(elem => elem.price = 2)
 
 console.log(filteredFood)
 
@@ -167,7 +191,19 @@ console.log(filteredFood)
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) => {
+    let filteredArray2 = []
 
+}
+const newFilter = foodArr.filter((elem , filterByProperty = (property, number, type) => {
+    let filteredArray2 = []
+    if(type === 'above') {
+        return elem.property > number
+    } else if (type !== 'below') {
+        return elem.property < number
+    }
+    return property 
+}))
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
