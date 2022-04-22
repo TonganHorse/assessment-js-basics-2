@@ -190,14 +190,7 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-const filteredByProperty = (property, number, type) => {
-    let arr = []
 
-}
-
-const newFoods = foodArr.filter((elem) => {
-    
-})
 
 
 
