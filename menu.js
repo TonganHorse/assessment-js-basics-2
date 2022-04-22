@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: 'bigshroom',
+    price: 8,
+    category: 'big',
+    popularity: 10,
+    rating: 10,
+    tags: ['gluten-free', 'kids']
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,7 +61,7 @@
 
 //CODE HERE
 
-
+console.log(pizza.tags[1])
 /*
     Third, destructure the price off of the
     pizza object.
@@ -63,7 +70,9 @@
 */
 
 //CODE HERE
+let {price: howMuch} = pizza
 
+console.log(howMuch)
 
 /*
     Fourth, and last, destructure the category
@@ -73,8 +82,8 @@
 */
 
 //CODE HERE
-
-
+let {category: type} = pizza
+console.log(type)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -88,7 +97,13 @@
 */
 
 //CODE HERE
-
+const foodArr = {
+    name: 'fatboy',
+    price: 1,
+    category: 'icecream',
+    comfortRating: 10,
+    rating: 10
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,7 +120,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(elem => elem.price)
+
+console.log(filteredFood)
 
 
 
