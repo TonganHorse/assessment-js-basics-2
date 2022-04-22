@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+ const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
+ console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,6 +56,11 @@ const cart = [
 
 //CODE HERE
 
+const calcFinalPrice = (couponValue, tax, totalPrice) => {
+    return (tax + 1) * totalPrice - couponValue
+}
+
+console.log(calcFinalPrice(300, .06, 2000))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +85,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+  What i would do is, create the object template that had 4 properties.
+ i would have a First Name, I would have a Last name,  i would have an email address, and i would have a mailing address. a date of checkout.
+   my reasoning for this is simple. It would store the name of the person checking out, it would have a place to send them their items, it would have a way to contact them. 
+   it would have a date of checkout so that i can see if it is urgent that i do their order first and foremost. all data types will be strings. i chose strings because it's
+   the easiest way to represent the properties that i chose. 
 */
 
 /*
@@ -88,3 +98,10 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    firstName: "Lyla",
+    LastName: "Smith",
+    emailAddress: "LylaSmith@gmail.com",
+    mailingAddress: "random address",
+    dateOfCheckout: "10/03/1996"
+}
