@@ -190,25 +190,15 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-
-const filterByProperty = (property, number, type) => {
-    let filteredArray2 = []
+const filteredByProperty = (property, number, type) => {
+    let arr = []
 
 }
-const newFilter = foodArr.filter((elem , filterByProperty = (property, number, type) => {
-    let filteredArray2 = []
-    if(type === 'above') {
-        return elem.property > number
-    } else if (type !== 'below') {
-        return elem.property < number
-    }
-    return property 
-}))
-/*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
 
-    You'll have to console.log to see the filtered array
-*/
+const newFoods = foodArr.filter((elem) => {
+    
+})
+
+
 
 //CODE HERE
